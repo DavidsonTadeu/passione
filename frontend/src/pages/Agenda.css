@@ -1,0 +1,136 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.25rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn:hover {
+  background-color: var(--bg-color);
+}
+
+.form-select {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  outline: none;
+  font-family: inherit;
+  color: var(--text-primary);
+}
+
+.agenda-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.calendar-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.date-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.date-nav h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.calendar-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.time-column {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+}
+
+.time-slot-label {
+  height: 80px;
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  border-right: 1px solid var(--border-color);
+}
+
+.appointments-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.time-slot-row {
+  height: 80px;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.time-slot-row:hover {
+  background-color: rgba(0,0,0,0.01);
+}
+
+.appointment-block {
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  cursor: pointer;
+  border-left-width: 4px;
+  border-left-style: solid;
+  transition: transform 0.2s;
+  box-shadow: var(--shadow-sm);
+  z-index: 10;
+}
+
+.appointment-block:hover {
+  transform: scale(1.01);
+  box-shadow: var(--shadow-md);
+  z-index: 20;
+}
+
+.border-wine { border-left-color: var(--primary-color); }
+.border-gold { border-left-color: var(--accent-color); }
+
+.appt-time { font-size: 0.75rem; color: var(--text-primary); opacity: 0.8; }
+.appt-client { font-size: 0.875rem; font-weight: 600; color: var(--text-primary); }
+.appt-service { font-size: 0.75rem; color: var(--text-primary); opacity: 0.8; }
